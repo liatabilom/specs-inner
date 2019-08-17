@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Textile1 from "./images/Textile1.png";
+import "./Specs.css";
 
 class Main extends Component {
   render() {
@@ -11,7 +13,9 @@ class Main extends Component {
             Correia Gonc,alves
           </header>
         </h1>
-        <h2 />
+        <h2>
+          <img src={Textile1} alt="" className="textile" />
+        </h2>
         <h3 />
       </div>
     );
