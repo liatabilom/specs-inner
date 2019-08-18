@@ -22,3 +22,19 @@
   height: 366px;
   width: 315px;
 }
+
+.topCircle {
+  color: blue;
+  position: relative;
+  display: inline-block;
+  top: 150px;
+  left: -30px;
+}
+
+.bottomCircle {
+  color: green;
+  position: relative;
+  display: inline-block;
+  top: 200px;
+  left: -374px;
+}
