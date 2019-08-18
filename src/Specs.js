@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Textile1 from "./images/Textile1.png";
+import Selector from "./Selector";
 import "./Specs.css";
 
 class Main extends Component {
@@ -16,7 +17,9 @@ class Main extends Component {
         <h2>
           <img src={Textile1} alt="" className="textile" />
         </h2>
-        <h3 />
+        <h3>
+          <Selector />
+        </h3>
       </div>
     );
   }
