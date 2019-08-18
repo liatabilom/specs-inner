@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"rel="stylesheet");
+
 .chevronLeft {
   position: relative;
   display: inline-block;
@@ -9,7 +11,7 @@
 .chevronRight {
   position: relative;
   display: inline-block;
-  top: 150px;
+  top: 110px;
   left: 570px;
   color: #f5f4ef;
 }
@@ -17,24 +19,56 @@
 .specsPieces {
   position: relative;
   display: inline-block;
-  top: 200px;
-  left: 80px;
+  top: 150px;
+  left: 100px;
   height: 366px;
   width: 315px;
 }
 
 .topCircle {
-  color: blue;
+  color: #70634e;
   position: relative;
   display: inline-block;
-  top: 150px;
-  left: -30px;
+  top: 330px;
+  left: -48px;
 }
 
 .bottomCircle {
-  color: green;
+  color: #292f45;
   position: relative;
   display: inline-block;
-  top: 200px;
-  left: -374px;
+  top: 335px;
+  left: -20px;
+}
+
+.topColorName {
+  position: relative;
+  display: inline-block;
+  top: 305px;
+  left: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0257895em;
+  color: #ffffff;
+}
+
+.bottomColorName {
+  position: relative;
+  display: inline-block;
+  top: 310px;
+  left: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.0257895em;
+  color: #ffffff;
 }

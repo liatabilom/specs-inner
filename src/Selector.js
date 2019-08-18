@@ -15,10 +15,12 @@ class Selector extends Component {
           size="1x"
           className="chevronLeft"
         />
+        <FontAwesomeIcon icon={faCircle} size="1x" className="topCircle" />
+        <span className="topColorName">Kakhi</span>
+        <FontAwesomeIcon icon={faCircle} size="1x" className="bottomCircle" />
+        <span className="bottomColorName">Dark Saphire</span>
         <div>
-          <FontAwesomeIcon icon={faCircle} size="1x" className="topCircle" />
           <img src={Tailored} alt="" className="specsPieces" />
-          <FontAwesomeIcon icon={faCircle} size="1x" className="bottomCircle" />
         </div>
         <FontAwesomeIcon
           icon={faChevronCircleRight}
