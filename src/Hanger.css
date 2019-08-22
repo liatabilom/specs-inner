@@ -1,0 +1,15 @@
+.hangerContainer {
+  position: relative;
+  top: 266px;
+  left: -15px;
+  background: #f5f4ef;
+  width: 1440px;
+  height: 830px;
+  padding: 15, 0px;
+  margin: 150, 0px;
+}
+
+.hangerImg {
+  position: relative;
+  top: 180px;
+}
