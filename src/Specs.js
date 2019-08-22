@@ -6,7 +6,7 @@ import "./Specs.css";
 class Main extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <h1>
           <header className="header .d-sm-flex">
             Na'dia

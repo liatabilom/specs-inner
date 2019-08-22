@@ -1,0 +1,50 @@
+.btnAccordion {
+  position: relative;
+  top: 110px;
+}
+.gallery-wrap {
+  position: relative;
+  top: -450px;
+  left: -15px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  width: 70%;
+  height: 85vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+
+.item:hover {
+  flex: 30;
+}
+
+.item-1 {
+  background-image: url(./images/Card8.png);
+}
+
+.item-2 {
+  background-image: url(./images/Card9.png);
+}
+
+.item-3 {
+  background-image: url(./images/Card10.png);
+}
+.item-4 {
+  background-image: url(./images/Card11.png);
+}
+
+.item-5 {
+  background-image: url(./images/Card12.png);
+}
+
+.item-6 {
+  background-image: url(./images/Card13.png);
+}
