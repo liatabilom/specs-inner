@@ -1,10 +1,10 @@
 .btnAccordion {
   position: relative;
-  top: 110px;
+  top: 120px;
 }
 .gallery-wrap {
   position: relative;
-  top: -450px;
+  top: -500px;
   left: -15px;
   display: flex;
   overflow: hidden;
