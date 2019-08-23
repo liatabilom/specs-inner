@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import useCollapse from "react-collapsed";
-import Card13 from "./images/Card13.png";
-import Card12 from "./images/Card12.png";
-import Card11 from "./images/Card11.png";
-import Card10 from "./images/Card10.png";
-import Card9 from "./images/Card9.png";
-import Card8 from "./images/Card8.png";
+import Card13 from "./images/cards/Card13.png";
+import Card12 from "./images/cards/Card12.png";
+import Card11 from "./images/cards/Card11.png";
+import Card10 from "./images/cards/Card10.png";
+import Card9 from "./images/cards/Card9.png";
+import Card8 from "./images/cards/Card8.png";
 
 import "./Sidebar.css";
 
