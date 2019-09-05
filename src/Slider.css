@@ -58,8 +58,8 @@
   color: #70634e;
   position: relative;
   display: inline-block;
-  top: 330px;
-  left: -48px;
+  top: 320px;
+  left: -20px;
 }
 
 .bottomCircle {
@@ -70,10 +70,10 @@
   left: -20px;
 }
 
-.topColorName {
+.topColorSubTitle {
   position: relative;
   display: inline-block;
-  top: 305px;
+  top: 298px;
   left: 22px;
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
@@ -86,7 +86,7 @@
   color: #ffffff;
 }
 
-.bottomColorName {
+.bottomColorSubTitle {
   position: relative;
   display: inline-block;
   top: 310px;

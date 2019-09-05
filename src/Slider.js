@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import Slide from "./components/Slide";
-import RightArrow from "./components/RightArrow";
-import LeftArrow from "./components/LeftArrow";
+import Slide from "./components/slider/Slide";
+import RightArrow from "./components/slider/RightArrow";
+import LeftArrow from "./components/slider/LeftArrow";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Slider.css";
 
 class Slider extends Component {
@@ -53,20 +55,40 @@ class Slider extends Component {
 
   render() {
     return (
-      <div className="slider">
-        <div
-          className="slider-wrapper"
-          style={{
-            transform: `translateX(${this.state.translateValue}px)`,
-            transition: `transform ease-out 0.45s`
-          }}
-        >
-          {this.state.images.map((image, i) => (
-            <Slide image={image} key={i} />
-          ))}
+      <div>
+        <div>
+          <FontAwesomeIcon
+            icon={faCircle}
+            size="1x"
+            className="topCircle"
+            aria-hidden="true"
+          />
+          <span className="topColorSubTitle">Kakhi</span>
         </div>
-        <LeftArrow goToPrevSlide={this.goToPrevSlide} />
-        <RightArrow goToNextSlide={this.goToNextSlide} />
+        <div>
+          <FontAwesomeIcon
+            icon={faCircle}
+            size="1x"
+            className="bottomCircle"
+            aria-hidden="true"
+          />
+          <span className="bottomColorSubTitle">Dark Saphire</span>
+        </div>
+        <div className="slider">
+          <div
+            className="slider-wrapper"
+            style={{
+              transform: `translateX(${this.state.translateValue}px)`,
+              transition: `transform ease-out 0.45s`
+            }}
+          >
+            {this.state.images.map((image, i) => (
+              <Slide image={image} key={i} />
+            ))}
+          </div>
+          <LeftArrow goToPrevSlide={this.goToPrevSlide} />
+          <RightArrow goToNextSlide={this.goToNextSlide} />
+        </div>
       </div>
     );
   }
