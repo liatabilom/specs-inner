@@ -1,19 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"rel="stylesheet");
 
-.chevronLeft {
+.slider {
+  display: flex;
   position: relative;
-  display: inline-block;
-  top: 550px;
-  left: -100px;
-  color: #f5f4ef;
+  left: -300px;
+  top: 150px;
+  width: 500px;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.chevronRight {
+.slider-wrapper {
   position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
   display: inline-block;
-  top: 110px;
-  left: 570px;
-  color: #f5f4ef;
+  height: 100%;
+  width: 100%;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  z-index: 999;
+  color: #fff;
+}
+
+.backArrow {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: 999;
+  color: #fff;
+}
+
+.rightArrow:before,
+.leftArrow:before {
+  color: #222;
 }
 
 .specsPieces {
