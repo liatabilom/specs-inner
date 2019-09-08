@@ -36,12 +36,12 @@
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s;
 }
 
 .hangerBox:hover {
   animation-play-state: paused;
-  transform: scale(2.1);
+  transform: scale(1.5);
 }
 
 @keyframes move {

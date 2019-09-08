@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import Draggable from "react-draggable";
-import Hanger18 from "./images/hanger/Hanger18.png";
-import Hanger19 from "./images/hanger/Hanger19.png";
-import Hanger20 from "./images/hanger/Hanger20.png";
-import Hanger21 from "./images/hanger/Hanger21.png";
 import "./Hanger.css";
 
 class Hanger extends Component {
