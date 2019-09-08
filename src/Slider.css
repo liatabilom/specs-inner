@@ -3,8 +3,8 @@
 .slider {
   display: flex;
   position: relative;
-  left: -300px;
-  top: 150px;
+  left: -280px;
+  top: 60px;
   width: 500px;
   margin: 0 auto;
   height: 500px;
@@ -45,36 +45,27 @@
   color: #222;
 }
 
-.specsPieces {
-  position: relative;
-  display: inline-block;
-  top: 150px;
-  left: 100px;
-  height: 366px;
-  width: 315px;
-}
-
 .topCircle {
   color: #70634e;
   position: relative;
   display: inline-block;
-  top: 320px;
-  left: -20px;
+  top: 280px;
+  left: -25px;
 }
 
 .bottomCircle {
   color: #292f45;
   position: relative;
   display: inline-block;
-  top: 335px;
-  left: -20px;
+  top: 280px;
+  left: -25px;
 }
 
 .topColorSubTitle {
   position: relative;
   display: inline-block;
-  top: 298px;
-  left: 22px;
+  top: 258px;
+  left: 16px;
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -89,8 +80,8 @@
 .bottomColorSubTitle {
   position: relative;
   display: inline-block;
-  top: 310px;
-  left: 22px;
+  top: 258px;
+  left: 16px;
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
   font-weight: normal;

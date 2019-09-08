@@ -17,7 +17,7 @@ class Main extends Component {
           <img
             src="https://media.giphy.com/media/Qum9eMNAN9NNCLbhV9/giphy.gif"
             alt="textile"
-            className="textile .d-flex"
+            className="textile img-fluid"
           />
         </h2>
         <h3>

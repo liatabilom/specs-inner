@@ -1,6 +1,11 @@
+.container {
+  margin: 0px;
+  padding: 0px;
+}
 .hangerContainer {
+  display: flex;
   position: relative;
-  top: 266px;
+  top: 170px;
   left: -15px;
   background: #f5f4ef;
   width: 1440px;
@@ -9,7 +14,41 @@
   margin: 150, 0px;
 }
 
-.hangerImg {
+.hangerGroupContainer {
   position: relative;
-  top: 180px;
+  top: 150px;
+  height: 200px;
+  width: 2500px;
+  border: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 40px 0px;
+}
+
+.hangerBox {
+  object-fit: scale-down;
+  position: relative;
+  top: -40px;
+  margin: 0px;
+  display: inline;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  transition: all 0.2s ease-in-out;
+}
+
+.hangerBox:hover {
+  animation-play-state: paused;
+  transform: scale(2.1);
+}
+
+@keyframes move {
+  0% {
+    margin-left: -400px;
+  }
+  100% {
+    margin-left: 800px;
+  }
 }

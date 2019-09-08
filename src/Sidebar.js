@@ -19,7 +19,7 @@ function Sidebar() {
   return (
     <React.Fragment>
       <button
-        className="btn btn-outline-dark btnAccordion"
+        className="btn btn-dark-outline btnAccordion"
         {...getToggleProps({
           onClick: () => setOpen(oldOpen => !oldOpen)
         })}
@@ -30,12 +30,12 @@ function Sidebar() {
         <div>
           <div className="containerAccordion d-inline">
             <div className="gallery-wrap">
-              <div className="item item-1 .active" />
-              <div className="item item-2" />
-              <div className="item item-3" />
-              <div className="item item-4" />
-              <div className="item item-5" />
-              <div className="item item-6" />
+              <div className="item item-1 .active"></div>
+              <div className="item item-2"></div>
+              <div className="item item-3"></div>
+              <div className="item item-4"></div>
+              <div className="item item-5"></div>
+              <div className="item item-6"></div>
             </div>
           </div>
         </div>

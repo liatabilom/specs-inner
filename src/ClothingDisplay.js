@@ -7,6 +7,12 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./ClothingDisplay.css";
 
 class ClothingDisplay extends Component {
+  state = {
+    inPlace: true
+  };
+
+  downArrow = () => {};
+
   render() {
     return (
       <div className="container clothesScroll">
@@ -16,7 +22,7 @@ class ClothingDisplay extends Component {
               className="parent"
               style={{
                 height: "500px",
-                width: "268px",
+                width: "1050px",
                 position: "relative",
                 overflow: "auto",
                 padding: "0"
@@ -26,7 +32,7 @@ class ClothingDisplay extends Component {
                 <FontAwesomeIcon
                   icon={faChevronDown}
                   size="2x"
-                  className="plusIcon2"
+                  className="upArrow"
                   onMouseOver={this.arrow}
                 />
                 <Draggable
@@ -46,7 +52,7 @@ class ClothingDisplay extends Component {
                 <FontAwesomeIcon
                   icon={faChevronUp}
                   size="2x"
-                  className="plusIcon2"
+                  className="downArrow"
                   onMouseOver={this.arrow}
                 />
               </div>
