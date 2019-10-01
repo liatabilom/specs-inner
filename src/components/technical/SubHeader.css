@@ -13,6 +13,5 @@
 }
 
 .subHeaderRight {
-	position: relative;
-	left: 70px;
+	padding: 0 30%;
 }
