@@ -1,94 +1,115 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"rel="stylesheet");
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap'rel='stylesheet');
+
+.container {
+	display: flex;
+	justify-content: right;
+	margin: 20 0%;
+}
 
 .slider {
-  display: flex;
-  position: relative;
-  left: -280px;
-  top: 60px;
-  width: 500px;
-  margin: 0 auto;
-  height: 500px;
-  overflow: hidden;
-  white-space: nowrap;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .slider-wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
+	position: relative;
+	height: 100%;
+	width: 100%;
 }
 
 .slide {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
+	display: inline-block;
+	position: relative;
+	top: -40px;
+	height: 100%;
+	width: 100%;
 }
 
 .nextArrow {
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  z-index: 999;
-  color: #fff;
+	position: absolute;
+	top: 60%;
+	right: 55px;
+	z-index: 999;
+	color: #fff;
 }
 
 .backArrow {
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  z-index: 999;
-  color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 25px;
+	z-index: 999;
+	color: #fff;
 }
 
 .rightArrow:before,
 .leftArrow:before {
-  color: #222;
+	color: #222;
 }
 
 .topCircle {
-  color: #70634e;
-  position: relative;
-  display: inline-block;
-  top: 280px;
-  left: -25px;
+	color: #70634e;
+	display: inline-block;
+	font-size: 70%;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	margin: 10px;
 }
 
 .bottomCircle {
-  color: #292f45;
-  position: relative;
-  display: inline-block;
-  top: 280px;
-  left: -25px;
+	color: #292f45;
+	display: inline-block;
+	font-size: 70%;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	margin: 10px;
 }
 
 .topColorSubTitle {
-  position: relative;
-  display: inline-block;
-  top: 258px;
-  left: 16px;
-  font-family: "Nunito Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: -0.0257895em;
-  color: #ffffff;
+	margin: 5px;
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	left: 15px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: -0.0257895em;
+	color: #ffffff;
 }
 
 .bottomColorSubTitle {
-  position: relative;
-  display: inline-block;
-  top: 258px;
-  left: 16px;
-  font-family: "Nunito Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: -0.0257895em;
-  color: #ffffff;
+	margin: 5px;
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	left: 15px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: -0.0257895em;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+	.topCircle,
+	.bottomCircle {
+		display: flex;
+	}
+	.image {
+		height: 70%;
+		width: 70%;
+	}
 }

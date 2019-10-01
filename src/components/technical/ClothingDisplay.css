@@ -1,0 +1,32 @@
+.clothingScroll {
+	display: flex;
+	position: relative;
+	top: 30px;
+	left: 100px;
+}
+
+.carouselImg {
+	display: flex;
+	position: relative;
+	left: 10px;
+	animation-name: carousel;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+	transition: transform 0.2s;
+}
+
+.carouselImg:hover {
+	animation-play-state: paused;
+	transform: scale(1.5);
+}
+
+@keyframes carousel {
+	0% {
+		margin-top: -1500px;
+	}
+	100% {
+		margin-top: 110px;
+	}
+}
