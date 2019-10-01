@@ -4,13 +4,9 @@ import './Hanger.css';
 class Hanger extends Component {
 	render() {
 		return (
-			<div className="container hangerContainer">
-				<div
-					className="hangerGroupContainer"
-					style={{
-						backgroundImage: "url('https://i.imgur.com/dOOxlBv.png')",
-					}}
-				>
+			<div className="container hangerContainer" style={{ margin: 0, padding: 0 }}>
+				<div>
+					<hr />
 					<div className="hangerBox">
 						<img
 							src="https://i.imgur.com/dOOxlBv.png"
@@ -22,7 +18,7 @@ class Hanger extends Component {
 							src="https://i.imgur.com/PhbN2cy.png"
 							alt="Blue Trousers"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: 48 }}
 						/>
 
 						<img
@@ -47,7 +43,7 @@ class Hanger extends Component {
 							src="https://i.imgur.com/Fdg465q.png"
 							alt="Green Trousers"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: 36 }}
 						/>
 						<img
 							src="https://i.imgur.com/HnYKaeX.png"

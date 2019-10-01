@@ -2,22 +2,11 @@
 	display: flex;
 	position: relative;
 	top: 80px;
-	padding: 15, 0px;
-	margin: 15, 0px;
-}
-
-.hangerGroupContainer {
-	height: 300px;
-	width: 2000px;
-	border: none;
-	overflow: hidden;
-	margin: 50 0px;
-	padding: 10px;
 }
 
 .hangerBox {
 	position: relative;
-	top: -20px;
+	top: -106px;
 	margin: 0px;
 	display: flex;
 	animation-name: move;
@@ -35,9 +24,9 @@
 
 @keyframes move {
 	0% {
-		margin-left: -4500px;
+		margin-left: -4590px;
 	}
 	100% {
-		margin-left: 100px;
+		margin-left: 50px;
 	}
 }
