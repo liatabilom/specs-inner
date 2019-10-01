@@ -1,9 +1,7 @@
 .footerText {
 	position: relative;
-	left: 400px;
+	left: 40px;
 	height: 18px;
-	width: 100px;
-	margin: 5px;
 	font-family: 'Nunito Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -11,4 +9,5 @@
 	line-height: 14px;
 	letter-spacing: -0.016em;
 	color: #80848f;
+	margin: 0 5 0 0%;
 }
