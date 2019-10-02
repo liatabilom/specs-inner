@@ -12,7 +12,7 @@ class Hanger extends Component {
 							src="https://i.imgur.com/dOOxlBv.png"
 							alt="3 Shirts"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: 5 }}
 						/>
 						<img
 							src="https://i.imgur.com/PhbN2cy.png"
@@ -55,7 +55,7 @@ class Hanger extends Component {
 							src="https://i.imgur.com/bXJi7jF.png"
 							alt="T-shirt Pack"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: 5 }}
 						/>
 						<img
 							src="https://i.imgur.com/RfOhCmv.png"
@@ -73,19 +73,19 @@ class Hanger extends Component {
 							src="https://i.imgur.com/LVbeBvx.png"
 							alt="Striped T-shirt Pack"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: -5 }}
 						/>
 						<img
 							src="https://i.imgur.com/OMDSY0J.png"
 							alt="Sea Hunters Flyer"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: 6 }}
 						/>
 						<img
 							src="https://i.imgur.com/hb7rc9W.png"
 							alt="Sea Hunters Flyer 2"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: 10 }}
 						/>
 						<img
 							src="https://i.imgur.com/ggBZjEz.png"
@@ -97,7 +97,7 @@ class Hanger extends Component {
 							src="https://i.imgur.com/nBggovw.png"
 							alt="Grey T-shirt"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: -5 }}
 						/>
 						<img
 							src="https://i.imgur.com/CKxnN21.png"
@@ -121,7 +121,7 @@ class Hanger extends Component {
 							src="https://i.imgur.com/FSOmEKG.png"
 							alt="Winter Jacket"
 							className="hangerImg"
-							style={{ width: 300, height: 300 }}
+							style={{ width: 300, height: 300, position: 'relative', top: 10 }}
 						/>
 						<img
 							src="https://i.imgur.com/W8toBZo.png"
