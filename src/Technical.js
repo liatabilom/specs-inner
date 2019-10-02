@@ -17,7 +17,9 @@ class Technical extends Component {
 				<Sidebar />
 				<Footer />
 				<br />
-				<Hanger />
+				<footer>
+					<Hanger />
+				</footer>
 			</div>
 		);
 	}

@@ -4,8 +4,8 @@ import './Hanger.css';
 class Hanger extends Component {
 	render() {
 		return (
-			<div className="container hangerContainer" style={{ margin: 0, padding: 0 }}>
-				<div>
+			<div className="hangerContainer">
+				<div className="hangerGroupContainer">
 					<hr />
 					<div className="hangerBox">
 						<img

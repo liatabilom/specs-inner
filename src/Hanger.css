@@ -4,10 +4,16 @@
 	top: 80px;
 }
 
+.hangerGroupContainer {
+	height: 300px;
+	width: 2000px;
+	border: none;
+	overflow: hidden;
+}
+
 .hangerBox {
 	position: relative;
-	top: -106px;
-	margin: 0px;
+	top: -90px;
 	display: flex;
 	animation-name: move;
 	animation-duration: 30s;
@@ -18,13 +24,13 @@
 }
 
 .hangerBox:hover {
-	animation-play-state: paused;
+	animation-play-state: scroll;
 	transform: scale(1.5);
 }
 
 @keyframes move {
 	0% {
-		margin-left: -4590px;
+		margin-left: -4500px;
 	}
 	100% {
 		margin-left: 50px;
