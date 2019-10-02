@@ -13,7 +13,7 @@
 
 .hangerBox {
 	position: relative;
-	top: -90px;
+	top: -105px;
 	display: flex;
 	animation-name: move;
 	animation-duration: 30s;
@@ -24,8 +24,7 @@
 }
 
 .hangerBox:hover {
-	animation-play-state: scroll;
-	transform: scale(1.5);
+	animation-play-state: paused;
 }
 
 @keyframes move {

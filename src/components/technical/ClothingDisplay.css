@@ -1,7 +1,8 @@
-.clothingScroll {
-	position: relative;
-	top: 30px;
-	left: 100px;
+.scrollPosition {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10%;
+	padding: 0%;
 }
 
 .carouselImg {

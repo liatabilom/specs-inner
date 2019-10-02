@@ -6,23 +6,21 @@ class ClothingDisplay extends Component {
 	render() {
 		return (
 			<div
-				className="card-body p-0 col-sm-12 border border-dark parent clothingScroll"
+				className="card p-0 col-sm-3 border rounded-0 border-dark parent"
 				style={{
 					height: '500px',
 					width: '275px',
 					position: 'relative',
 					overflow: 'scroll',
-					padding: '0',
 				}}
 			>
-				<div style={{ height: '500px', width: '275px', padding: '0' }}>
+				<div style={{ height: '400px', width: '275px', padding: '0' }}>
 					<Draggable
 						axis="y"
 						bounds={(0, 10, 0, 10)}
 						handle=".handle"
 						grid={(25, 25)}
 						allowAnyClick={true}
-						cancel={'.body'}
 						disabled={true}
 					>
 						<img

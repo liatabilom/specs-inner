@@ -10,16 +10,18 @@ class Technical extends Component {
 		return (
 			<div style={{ background: '#F5F4EF' }}>
 				<SubHeader />
-
-				<h1>
-					<ClothingDisplay />
-				</h1>
 				<Sidebar />
+				<div className="container scrollPosition">
+					<ClothingDisplay />
+				</div>
+
 				<Footer />
 				<br />
-				<footer>
-					<Hanger />
-				</footer>
+				<div>
+					<h1>
+						<Hanger />
+					</h1>
+				</div>
 			</div>
 		);
 	}
