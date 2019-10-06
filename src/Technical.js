@@ -14,7 +14,6 @@ class Technical extends Component {
 				<div className="container scrollPosition">
 					<ClothingDisplay />
 				</div>
-
 				<Footer />
 				<br />
 				<div>

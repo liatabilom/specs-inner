@@ -26,7 +26,7 @@
 }
 
 .item:hover {
-	flex: 30;
+	flex: 40;
 }
 .item-1 {
 	background-image: url('https://i.imgur.com/Zl3Sbh5.jpg');

@@ -6,11 +6,10 @@ class ClothingDisplay extends Component {
 	render() {
 		return (
 			<div
-				className="card p-0 col-sm-3 border rounded-0 border-dark parent"
+				className="card-body p-0 col-md-4 border rounded-0 border-dark scrollPosition"
 				style={{
-					height: '500px',
+					height: '600px',
 					width: '275px',
-					position: 'relative',
 					overflow: 'scroll',
 				}}
 			>

@@ -109,8 +109,8 @@
 	.bottomCircle {
 		display: flex;
 	}
-	.image {
-		height: 70%;
-		width: 70%;
+
+	.slide {
+		background-size: 400px 400px;
 	}
 }

@@ -1,14 +1,14 @@
 .scrollPosition {
 	display: flex;
+	position: relative;
+	top: -15px;
 	justify-content: flex-end;
-	margin: 10%;
+	margin: 5%;
 	padding: 0%;
 }
 
 .carouselImg {
-	display: flex;
 	position: relative;
-	left: 10px;
 	animation-name: carousel;
 	animation-duration: 50s;
 	animation-iteration-count: infinite;
@@ -28,5 +28,11 @@
 	}
 	100% {
 		margin-top: 110px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.scrollPosition {
+		justify-content: center;
 	}
 }
