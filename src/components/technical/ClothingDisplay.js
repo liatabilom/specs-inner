@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Draggable from 'react-draggable';
+import CarouselAutoLettering from '../../images/CarouselAutoLettering.png';
 import './ClothingDisplay.css';
 
 class ClothingDisplay extends Component {
@@ -23,7 +24,7 @@ class ClothingDisplay extends Component {
 						disabled={true}
 					>
 						<img
-							src="https://i.imgur.com/FgOBFx9.jpg"
+							src={CarouselAutoLettering}
 							alt="Carousel"
 							className="carouselImg"
 							style={{ height: 2000, width: 250 }}
