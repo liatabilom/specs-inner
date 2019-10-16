@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TopColor from './components/slider/TopColor';
 import Slide from './components/slider/Slide';
 import RightArrow from './components/slider/RightArrow';
 import LeftArrow from './components/slider/LeftArrow';
@@ -12,14 +13,18 @@ class Slider extends Component {
 
 		this.state = {
 			images: [
-				'https://i.imgur.com/uKPmjUb.png',
-				'https://i.imgur.com/p1ICee3.png',
-				'https://i.imgur.com/fHIL6iV.png',
-				'https://i.imgur.com/x9fxboJ.png',
-				'https://i.imgur.com/ZXiAC37.png',
-				'https://i.imgur.com/tTIZuql.png',
-				'https://i.imgur.com/aCcBAh1.png',
-				'https://i.imgur.com/oHt4PGq.png',
+				{
+					id: 1,
+					imageUrl: 'https://i.imgur.com/uKPmjUb.png',
+					topColor: 'red',
+					topColorName: 'red',
+				},
+				{
+					id: 2,
+					imageUrl: 'https://i.imgur.com/p1ICee3.png',
+					topColor: 'blue',
+					topColorName: 'blue',
+				},
 			],
 			currentIndex: 0,
 			translateValue: 0,
@@ -32,6 +37,7 @@ class Slider extends Component {
 		this.setState(prevState => ({
 			currentIndex: prevState.currentIndex - 1,
 			translateValue: prevState.translateValue + this.slideWidth(),
+			id: prevState.image.id,
 		}));
 	};
 
@@ -56,11 +62,19 @@ class Slider extends Component {
 	render() {
 		return (
 			<div className="slider">
-				<FontAwesomeIcon icon={faCircle} size="1x" className="topCircle" aria-hidden="true" />
-				<span className="topColorSubTitle">Kakhi</span>
-				<br />
-				<FontAwesomeIcon icon={faCircle} size="1x" className="bottomCircle" aria-hidden="true" />
-				<span className="bottomColorSubTitle">Dark Saphire</span>
+				<div>
+					{this.state.images.map(images => (
+						<TopColor key={images.id} color={images.topColor} id={images.id} />
+					))}
+
+					{this.state.images.map(images => (
+						<span className="topColorSubTitle">{images.topColorName}</span>
+					))}
+
+					<br />
+					<FontAwesomeIcon icon={faCircle} size="1x" className="bottomCircle" aria-hidden="true" />
+					<span className="bottomColorSubTitle">Dark Saphire</span>
+				</div>
 				<div
 					className="slider-wrapper"
 					style={{
@@ -68,8 +82,8 @@ class Slider extends Component {
 						transition: `transform ease-out 0.45s`,
 					}}
 				>
-					{this.state.images.map((image, i) => (
-						<Slide image={image} key={i} />
+					{this.state.images.map(images => (
+						<Slide key={images.id} image={images.imageUrl} />
 					))}
 				</div>
 				<LeftArrow goToPrevSlide={this.goToPrevSlide} />

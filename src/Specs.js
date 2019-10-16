@@ -8,9 +8,11 @@ class Main extends Component {
 			<div style={{ background: '#80848F' }}>
 				<div className="header" style={{ padding: 20 }}>
 					<header>
-						Na'dia
-						<br />
-						Correia Gonc,alves
+						<a href="https://www.correiagoncalves.com" style={{ textDecoration: 'none', color: 'white' }}>
+							Na'dia
+							<br />
+							Correia Gonc,alves
+						</a>
 					</header>
 				</div>
 				<br />
