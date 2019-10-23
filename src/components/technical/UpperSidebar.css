@@ -1,0 +1,54 @@
+.btnAccordion {
+	position: relative;
+	top: 10px;
+	left: 30px;
+}
+
+.btnAccordion:hover {
+	border-color: black;
+}
+
+.gallery-wrap {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	overflow: hidden;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+.item {
+	flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	height: 80%;
+	width: 80%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	transition: flex 0.3s ease;
+}
+
+.item:hover {
+	flex: 40;
+}
+.item-1 {
+	background-image: url('https://i.imgur.com/wP5Rnq0.png');
+}
+.item-2 {
+	background-image: url('https://i.imgur.com/vQJJfXj.png');
+}
+.item-3 {
+	background-image: url('https://i.imgur.com/Hp5exkO.png');
+}
+.item-4 {
+	background-image: url('https://i.imgur.com/wNinGt6.png');
+}
+.item-5 {
+	background-image: url('https://i.imgur.com/Zq0Rtt3.png');
+}
+.item-6 {
+	background-image: url('https://i.imgur.com/CXMORG1.png');
+}

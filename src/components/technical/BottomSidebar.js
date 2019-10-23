@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useCollapse from 'react-collapsed';
-import './Sidebar.css';
+import './BottomSidebar.css';
 
 function Sidebar() {
 	const [isOpen, setOpen] = useState(false);
@@ -12,7 +12,7 @@ function Sidebar() {
 	return (
 		<React.Fragment>
 			<button
-				className="btn btn-dark-outline btnAccordion"
+				className="btn btn-dark-outline btnAccordion-bottom"
 				{...getToggleProps({
 					onClick: () => setOpen(oldOpen => !oldOpen),
 				})}
@@ -23,12 +23,13 @@ function Sidebar() {
 				<div>
 					<div className="containerAccordion">
 						<div className="gallery-wrap">
-							<div className="item item-1 .active"></div>
-							<div className="item item-2"></div>
-							<div className="item item-3"></div>
-							<div className="item item-4"></div>
-							<div className="item item-5"></div>
-							<div className="item item-6"></div>
+							<div className="item item-7 .active"></div>
+							<div className="item item-8"></div>
+							<div className="item item-9"></div>
+							<div className="item item-10"></div>
+							<div className="item item-11"></div>
+							<div className="item item-12"></div>
+							<div className="item item-13"></div>
 						</div>
 					</div>
 				</div>

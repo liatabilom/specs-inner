@@ -1,7 +1,7 @@
 .scrollPosition {
 	display: flex;
 	position: relative;
-	top: -15px;
+	top: -10px;
 	justify-content: flex-end;
 	margin: 5%;
 	padding: 0%;
