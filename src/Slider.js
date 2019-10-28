@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import TopColor from './components/slider/TopColor';
 import Slide from './components/slider/Slide';
 import RightArrow from './components/slider/RightArrow';
 import LeftArrow from './components/slider/LeftArrow';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import TopColor from './components/slider/TopColor';
+import BottomColor from './components/slider/BottomColor';
+import ExtraColor from './components/slider/ExtraColor';
 import './Slider.css';
 
 class Slider extends Component {
 	constructor(props) {
 		super(props);
+		this.state = { isLoaded: false };
+	}
 
-		this.state = {
+	sliderCallback = () => {
+		this.setState({
+			isLoaded: true,
 			images: [
 				'https://i.imgur.com/uKPmjUb.png',
 				'https://i.imgur.com/p1ICee3.png',
@@ -20,12 +24,13 @@ class Slider extends Component {
 				'https://i.imgur.com/ZXiAC37.png',
 				'https://i.imgur.com/tTIZuql.png',
 				'https://i.imgur.com/aCcBAh1.png',
+				'https://i.imgur.com/tN407zb.png',
 				'https://i.imgur.com/oHt4PGq.png',
 			],
 			currentIndex: 0,
 			translateValue: 0,
-		};
-	}
+		});
+	};
 
 	goToPrevSlide = () => {
 		if (this.state.currentIndex === 0) return;
@@ -54,15 +59,17 @@ class Slider extends Component {
 		return document.querySelector('.slide').clientWidth;
 	};
 
+	componentWillMount() {
+		this.sliderCallback();
+	}
+
 	render() {
 		return (
 			<div className="slider">
 				<div className="sliderContainer">
-					<FontAwesomeIcon icon={faCircle} className="topCircle" />
-					<span className="topColorSubTitle">Kakhi</span>
-					<br />
-					<FontAwesomeIcon icon={faCircle} size="1x" className="bottomCircle" />
-					<span className="bottomColorSubTitle">Dark Blue</span>
+					<TopColor index={this.state.currentIndex} />
+					<BottomColor index={this.state.currentIndex} />
+					<ExtraColor index={this.state.currentIndex} />
 				</div>
 				<br />
 				<div

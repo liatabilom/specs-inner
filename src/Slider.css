@@ -55,46 +55,23 @@
 	margin: 0px;
 }
 
-.topCircle {
+.topCircle,
+.bottomCircle,
+.extraCircle {
 	display: inline-block;
 	font-size: 70%;
 	position: relative;
-	top: 100px;
+	top: 80px;
 	width: 30px;
 	margin: 10px;
 }
 
-.bottomCircle {
-	color: #292f45;
-	display: inline-block;
-	font-size: 70%;
-	position: relative;
-	top: 100px;
-	width: 30px;
-	margin: 10px;
-}
-
-.topColorSubTitle {
+.colorSubTitle {
 	margin: 5px;
 	position: relative;
 	display: inline-block;
-	top: 90px;
-	left: 15px;
-	font-family: 'Nunito Sans', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 10px;
-	line-height: 14px;
-	letter-spacing: -0.0257895em;
-	color: #ffffff;
-}
-
-.bottomColorSubTitle {
-	margin: 5px;
-	position: relative;
-	display: inline-block;
-	top: 90px;
-	left: 15px;
+	top: 80px;
+	left: -20px;
 	font-family: 'Nunito Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
