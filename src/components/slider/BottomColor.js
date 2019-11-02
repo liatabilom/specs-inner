@@ -43,7 +43,7 @@ class BottomColor extends Component {
 			return (
 				<div style={{ color: '#572E31' }}>
 					{this.handleBottomColor()}
-					<span className="colorSubTitle">Dark Saphire</span>
+					<span className="colorSubTitle">Burgundy</span>
 				</div>
 			);
 		if (this.props.index === 6)

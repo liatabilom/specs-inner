@@ -7,7 +7,8 @@ class ExtraColor extends Component {
 		if (this.props.index === 2)
 			return (
 				<div style={{ color: '#964541' }}>
-					{this.handleExtraColor()} <span className="colorSubTitle">Chili</span>
+					{this.handleExtraColor()}
+					<span className="colorSubTitle">Chili</span>
 				</div>
 			);
 		if (this.props.index === 5)
@@ -22,7 +23,7 @@ class ExtraColor extends Component {
 	handleExtraColor = () => {
 		return (
 			<div className="extraCircle">
-				<FontAwesomeIcon icon={faCircle} size="1x" aria-hidden="true" />
+				<FontAwesomeIcon icon={faCircle} aria-hidden="true" />
 			</div>
 		);
 	};
