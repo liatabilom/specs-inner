@@ -78,6 +78,6 @@
 @media screen and (max-width: 480px) {
   .slider-wrapper {
     top: 0px;
-    left: -30px;
+    left: 0px;
   }
 }
