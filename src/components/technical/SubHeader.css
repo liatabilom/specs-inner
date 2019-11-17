@@ -1,34 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap'rel='stylesheet');
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"rel="stylesheet");
 
 .subHeader {
-	height: 18px;
-	font-family: 'Nunito Sans', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 16px;
-	letter-spacing: -0.016em;
-	color: #80848f;
+  height: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.016em;
+  color: #80848f;
+  text-align: center;
 }
 
 .rightHeader {
-	position: relative;
-	right: -50px;
+  position: relative;
+  right: 0px;
 }
 
 .subHeaderContainer {
-	-webkit-animation: move 12s infinite alternate-reverse;
-	animation: move 12s infinite alternate-reverse;
+  -webkit-animation: move 8s ease-in-out alternate-reverse;
+  animation: move 8s infinite alternate-reverse;
 }
 
 @-webkit-keyframes move {
-	0% {
-		margin-left: 30px;
-	}
+  0% {
+    margin-left: 30px;
+  }
 }
 
 @keyframes move {
-	0% {
-		margin-left: 30px;
-	}
+  0% {
+    margin-left: 30px;
+  }
 }
